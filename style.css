@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #121213;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+/* Styles communs aux messages */
+.message {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+/* Styles spécifiques aux messages de l'utilisateur */
+.user-message {
+  background-color: #113658;
+  color: white;
+  align-self: flex-end; /* Pour aligner à droite */
+}
+
+/* Styles spécifiques aux messages du bot */
+.bot-message {
+  background-color: #f1f0f0;
+  align-self: flex-start; /* Pour aligner à gauche */
+}
+
+/* Ajustements pour le chatContainer */
+#chatContainer {
+  height: 75vh; /* Ajuster en fonction de la hauteur souhaitée */
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 0.5rem auto;
+  width: 95vw;
+  border: 1px solid #090909;
+  border-radius: 10px;
+}
+
+#chatForm {
+  position: fixed;
+  bottom: 0;
+  max-height: 150px;
+  left: 2.5vw;
+  right: 2.5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-around;
+  padding: 0.5rem;
+}
+
+#inputArea {
+  display: flex;
+  align-items: center;
+  height: auto;
+  width: 100%;
+}
+
+textarea {
+  flex-grow: 1;
+  margin-right: 10px;
+  height: 50px; /* Hauteur initiale du textarea */
+  resize: none; /* Empêche le redimensionnement manuel */
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #0e0d0d;
+  color: white;
+  border-radius: 10px;
+  background-color: #2d2d2d;
+  font-family: 'Arial';
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #446688;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#response {
+  margin-top: 30px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
