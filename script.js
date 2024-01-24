@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
         systemMessageContent += ` Voilà l'historique de la conversation : [HISTORY] ${historyString} [/HISTORY]`;
       }
 
-      const response = await fetch(`https://mistral-ai-chat.vercel.app/askMistral`, {
+      const response = await fetch(`https://mistral-chat-api.onrender.com/askMistral`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
