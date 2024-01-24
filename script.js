@@ -1,6 +1,3 @@
-require('dotenv').config();
-const apiUrl = process.env.API_URL;
-
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("chatForm");
   const questionTextarea = document.getElementById("question");
@@ -28,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
         systemMessageContent += ` Voilà l'historique de la conversation : [HISTORY] ${historyString} [/HISTORY]`;
       }
 
-      const response = await fetch(`${apiUrl}/askMistral`, {
+      const response = await fetch(`https://mistral-ai-chat.vercel.app/askMistral`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
