@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
         systemMessageContent += ` Voilà l'historique de la conversation : [HISTORY] ${historyString} [/HISTORY]`;
       }
 
-      const response = await fetch("http://localhost:3000/askMistral", {
+      const response = await fetch(`${API_URL}/askMistral`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
