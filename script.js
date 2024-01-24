@@ -1,3 +1,4 @@
+import dotenv from "dotenv";
 const apiUrl = process.env.API_URL;
 
 document.addEventListener("DOMContentLoaded", function () {
